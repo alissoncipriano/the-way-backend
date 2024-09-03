@@ -1,0 +1,36 @@
+###
+POST http://localhost:13000/setup
+Content-Type: application/json
+
+{
+  "name": "Alisson",
+  "email": "alisson-cipriano@email.com",
+  "password": "123456",
+  "tagTitle": "Estoicismo",
+  "postTitle": "O que é o estoicismo?",
+  "postContent": "O estoicismo é uma escola de filosofia helenística fundada em Atenas por Zenão de Cítio no início do século III a.C. É uma filosofia de vida que prega a tranquilidade e a serenidade como forma de alcançar a felicidade."
+}
+
+###
+POST http://localhost:13000/comment
+Content-Type: application/json
+
+{
+  "postID": 1, "userID": 1, "content": "lerolero"
+}
+
+###
+POST http://localhost:13000/post
+Content-Type: application/json
+
+{
+  "userID": 1, "tagID": 1, "title": "Niilismo", "content": "lerolero"
+}
+
+###
+POST http://localhost:13000/tag
+Content-Type: application/json
+
+{
+  "userID": 1, "tagID": 1, "title": "Niilismo"
+}

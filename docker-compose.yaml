@@ -1,0 +1,12 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: db1
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+  app:
+    image: the-way-node-app
+    ports:
+      - '13000:3000'
